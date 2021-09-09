@@ -1,3 +1,4 @@
+--Do not edit unless you know what you're doing--
 peacetime = false;
 function sendMsg(src, msg)
   TriggerClientEvent('chat:addMessage', src, { args = {"^6[^9Pegasus PT^6] ~y~" .. msg} });
