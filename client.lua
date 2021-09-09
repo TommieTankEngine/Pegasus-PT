@@ -1,4 +1,4 @@
-
+--Do not edit unless you know what you're doing--
 peacetime = false 
 function DrawText(x,y ,width,height,scale, text, r,g,b,a)
   SetTextFont(4)
