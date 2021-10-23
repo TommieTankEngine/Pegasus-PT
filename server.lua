@@ -15,5 +15,7 @@ RegisterCommand("peacetime", function(source, args, rawCommand)
       sendMsg(-1, "~y~PeaceTime is now ^1OFF!");
       sendMsg(src, "~y~You have set PeaceTime to ^1OFF");
     end
+      else
+      TriggerClientEvent("chatMessage", source, "^4Pegasus_PT: ^1You do not have the required Permission for this command!", {255, 255, 255})
   end
 end)
