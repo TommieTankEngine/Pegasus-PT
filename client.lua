@@ -37,3 +37,26 @@ Citizen.CreateThread(function()
 		end
   end
 end)
+
+RegisterNetEvent('PeaceTimeOn')
+AddEventHandler('PeaceTimeOn', function(PTON)
+   Notify("~g~You have set PeaceTime to ON")
+    end)
+
+RegisterNetEvent('PeaceTimeOff')
+AddEventHandler('PeaceTimeOff', function(PTOFF)
+   Notify("~g~You have set PeaceTime to OFF")
+    end)
+
+
+RegisterNetEvent('NotifyEvent')
+AddEventHandler('NotifyEvent', function (notifyevent)
+Notify("~r~You do not have permission to use this command!")
+end)
+
+
+function Notify( text )
+  SetNotificationTextEntry( "STRING" )
+  AddTextComponentString( text )
+  DrawNotification( false, false )
+end
